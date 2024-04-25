@@ -3,7 +3,7 @@ import re
 
 class Roboto:
 
-    def read_excel_to_dataframe(file_path):
+    def read_excel_to_dataframe(self, file_path):
 
         ''' Enter the path of the file
         in the format (r " ")'''
@@ -89,4 +89,5 @@ class Roboto:
         
         return text        
 
+# main
 
