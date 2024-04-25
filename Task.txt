@@ -1,0 +1,12 @@
+There are 2 raw files named 'raw_belsimpel' and 'raw_shopee_Sg' and 1 combined output file - output_shopee_belsimpel the desired output for reference.
+
+The task is to write a function/class so as to process and manipulate the 2 raw files using Python such that the output file matches the given combined file ('output_shopee_belsimpel'). Also, would be nice to see additional checks added to see if the code works for different scenarios and won't break or give incorrect ouput.
+
+Pay close attention to the 'Review Text' columns format in Belsimpel as it has 'Pros'(Pluspunt) and 'Cons'(Minpunt) added when required after the review part for Belsimpel.
+
+Also, note the format for 'Review Text' in Shopee file which has 3 sections (Performance, Best Feature and Value for Money) in addition to the comment added afterwards.
+
+Also, an additional symbol '.' has been added in 'Review Text' column to segregrate the sections. 
+
+You can go to the 2 sources i.e. respective websites (shown in 'web-scraper-start-url' column of the raw files) for further reference.
+
