@@ -20,7 +20,7 @@ class Roboto:
             print("Error:", e)
             return None
     
-    def preprocess(df):
+    def preprocess(self, df):
     
         '''Pass a dataframe as parameter.
         This function is for string data  nan value  handling purpose.
