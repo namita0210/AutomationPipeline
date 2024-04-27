@@ -39,7 +39,6 @@ class Roboto:
 
         #calculate null values
         null_values = df.isnull().sum()
-        #print("Null values in each column:\n", null_values)
 
         null_vals_dict = null_values.to_dict() # convert null values series to dictionary
 
