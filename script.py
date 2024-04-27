@@ -23,10 +23,15 @@ class Roboto:
     def preprocess(self, df):
     
         '''Pass a dataframe as parameter.
+
         This function is for string data  nan value  handling purpose.
+
         This function will check for null values. 
-        Column with all values equal to null will be dropped.
-        Columns with same rows missing will be dropped
+
+        Columns with all values equal to null will be dropped.
+
+        Rows of those columns that have the same rows missing - those rows will be dropped.
+
         Other columns with unsynced missing rows will be imputed with the string "No value specified" '''
 
         size = df.shape
