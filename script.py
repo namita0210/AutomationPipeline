@@ -36,22 +36,7 @@ class Roboto:
         null_values = df.isnull().sum()
         #print("Null values in each column:\n", null_values)
 
-        col_idx = [] # capture index of null values
-        for i, n in enumerate(null_values):
-            if ((n > 0) & ( n != nrows)): # is null values exist
-                col_idx.append(i)      
-
-        col_names = [] # capture names of cols with null values
-        for idx in col_idx:
-            name = df.columns[idx]
-            col_names.append(name)   
-
-        #create dataframe of cols with null values
-        dictionary = {}
-        for name in col_names:
-            dictionary[name] = df[name]      
-
-        df2 = pd.DataFrame(dictionary)    
+           
 
         # null_rows = df2[dictionary[col_names[0]].isnull() & dictionary[col_names[1]].isnull()]
         null_rows = None
