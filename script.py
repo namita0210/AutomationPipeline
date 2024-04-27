@@ -36,7 +36,11 @@ class Roboto:
         null_values = df.isnull().sum()
         #print("Null values in each column:\n", null_values)
 
-           
+        null_vals_dict = null_values.to_dict() # convert null values series to dictionary
+
+        #filter nul_values_dit to get the null_values columns and the number of null values they have except the column where all values are null
+
+        dictionary =   {key: value for key, value in null_vals_dict.items() if value > 0 and value != nrows} 
 
         # null_rows = df2[dictionary[col_names[0]].isnull() & dictionary[col_names[1]].isnull()]
         null_rows = None
